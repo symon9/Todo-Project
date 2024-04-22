@@ -4,10 +4,14 @@
 
 html {
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
   margin: 0;
+  width: 520px;
 }
 
 label,
@@ -79,6 +83,7 @@ button:active {
 .projects h2 {
   margin: 0;
   color: white;
+  padding: 1rem;
 }
 
 .projects ul {
@@ -125,4 +130,16 @@ button:active {
   padding: 1rem;
   border: 1px solid #ff0062;
   background: #f7f7f7;
+}
+
+@media screen and (min-width: 820px) {
+  #app {
+    display: flex;
+  }
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
